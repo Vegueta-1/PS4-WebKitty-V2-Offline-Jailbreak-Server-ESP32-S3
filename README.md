@@ -51,7 +51,7 @@ Should run exactly like the MON16R8.
 
 The update adds universal region support, allowing the firmware to correctly handle different regional document paths so the User Guide loads as expected across all consoles.
 
-Go here to flash it via Web Flasher:
+Go here to flash it via Web Flasher: https://vegueta-1.github.io/PS4-WebKitty-V2-Offline-Jailbreak-Server-ESP32-S3/
 
 How to use it:
 
