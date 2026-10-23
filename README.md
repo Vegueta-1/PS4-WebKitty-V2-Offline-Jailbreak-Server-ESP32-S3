@@ -14,9 +14,12 @@ A modular collection of WebKit-based exploit chains for the PlayStation 4. (Form
 
 Features Core Exploit & Execution Auto-detection: Automatically detects console type and firmware version. WebKit Exploits: Entry point via the console's web browser using PSFree, Bad Hoist, CSSFontFace or slopkit. Kernel Exploits: Escalates privileges to kernel level using Lapse, Netctrl, or Sleirsgoevy's 6.7x. Payload Loader: After successful kernel exploitation, payloads or listens for incoming payloads on port 9020. Barebone Jailbreak Experience option: Executes the exploit in a minimal DOM footprint and automatically redirects back to the main page upon completion. Firmware-Based Caching: Caches only what your specific firmware version requires instead of caching everything offline. Interface & Customization Themes & Layouts: Customizable layout modes with independent theme options. HEN Flavor Selector: Toggle between HEN and GoldHEN, with integrated GoldHEN version selection. Descriptive Payload Selection: Clear descriptions and unsupported payload loading protection. Multilingual Support: Dynamic language switcher.
 
+Supported PS4 Firmware​
 
-Supported PS4 Firmware
-<img width="852" height="419" alt="Screenshot 2026-09-07 093714" src="https://github.com/user-attachments/assets/9e026e91-1bdb-421b-8dee-2294319445c1" />
+This table indicates firmware versions for which the current version of this repository provides a functional and tested exploit chain.
+
+<img width="508" height="414" alt="Supported by this Repository" src="https://github.com/user-attachments/assets/788ba0e6-a093-4036-8ea2-e58e0299f7e5" />
+
 
 https://youtu.be/-trfe6O2AJQ
 
