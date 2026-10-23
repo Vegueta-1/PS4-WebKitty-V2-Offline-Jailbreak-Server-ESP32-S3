@@ -1,23 +1,20 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>PS4 WebKitty V2 Offline Jailbreak Server</title>
 
 <script
-  type="module"
-  src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module">
+type="module"
+src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module">
 </script>
 
 <style>
 
 :root{
     --bg:#050814;
-    --bg2:#0b1020;
     --card:#10182b;
     --accent:#4cc9ff;
     --accent2:#4361ee;
@@ -27,9 +24,9 @@
 }
 
 *{
-    box-sizing:border-box;
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 
 html{
@@ -56,32 +53,15 @@ body{
     padding:24px;
 }
 
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-
-    background:
-    radial-gradient(
-        circle at top right,
-        rgba(76,201,255,.08),
-        transparent 35%
-    );
-}
-
 .container{
     max-width:1200px;
     margin:auto;
 }
 
 .hero{
-    position:relative;
-    overflow:hidden;
-
+    margin-bottom:20px;
     border-radius:24px;
-
-    margin-bottom:24px;
+    overflow:hidden;
 
     box-shadow:
     0 25px 60px rgba(0,0,0,.6);
@@ -89,68 +69,23 @@ body::before{
 
 .hero img{
     width:100%;
+    height:auto;
     display:block;
 }
 
-.hero-overlay{
-    position:absolute;
-    inset:0;
-
-    background:
-    linear-gradient(
-        90deg,
-        rgba(2,8,25,.92) 0%,
-        rgba(2,8,25,.65) 40%,
-        rgba(2,8,25,.10) 100%
-    );
-
-    display:flex;
-    align-items:center;
-}
-
-.hero-content{
-    padding:40px;
-    max-width:650px;
-}
-
-.hero-badge{
-    display:inline-block;
-    padding:6px 12px;
-
-    border-radius:999px;
-
-    background:rgba(76,201,255,.15);
-
-    border:
-    1px solid rgba(76,201,255,.35);
-
-    color:var(--accent);
-
-    margin-bottom:15px;
-}
-
-.hero h1{
-    font-size:2.5rem;
-    margin-bottom:12px;
-}
-
-.hero p{
-    color:#cbd9ff;
-    line-height:1.6;
-    margin-bottom:20px;
-}
-
-.hero-buttons{
+.hero-actions{
     display:flex;
     gap:12px;
     flex-wrap:wrap;
+    margin-bottom:24px;
 }
 
 .btn{
     text-decoration:none;
-    padding:12px 18px;
+    padding:12px 20px;
     border-radius:999px;
     transition:.2s;
+    font-weight:700;
 }
 
 .btn-primary{
@@ -161,13 +96,16 @@ body::before{
         var(--accent2)
     );
 
-    color:#050814;
-    font-weight:700;
+    color:#041018;
 }
 
 .btn-secondary{
     border:1px solid rgba(255,255,255,.15);
     color:white;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
 }
 
 .grid{
@@ -186,8 +124,6 @@ body::before{
         rgba(10,14,25,.95)
     );
 
-    backdrop-filter:blur(18px);
-
     border-radius:18px;
 
     border:
@@ -196,6 +132,8 @@ body::before{
     padding:24px;
 
     overflow:hidden;
+
+    backdrop-filter:blur(18px);
 }
 
 .card::before{
@@ -205,9 +143,9 @@ body::before{
 
     background:
     radial-gradient(
-       circle at top left,
-       rgba(76,201,255,.12),
-       transparent 45%
+        circle at top left,
+        rgba(76,201,255,.12),
+        transparent 45%
     );
 
     pointer-events:none;
@@ -220,52 +158,34 @@ body::before{
 
 .section-title{
     margin-bottom:14px;
-
     text-transform:uppercase;
-
     letter-spacing:.15em;
-
     color:var(--muted);
-
     font-size:.85rem;
 }
 
 .warning{
     background:#2d1116;
-    border:
-    1px solid #ff4d6a;
-
+    border:1px solid #ff4d6a;
     color:#ffd8df;
-
     border-radius:12px;
-
     padding:14px;
-
     margin-bottom:16px;
-}
-
-.warning strong{
-    color:white;
 }
 
 .flash-btn{
     all:unset;
 
     display:inline-flex;
-
     align-items:center;
-
-    gap:10px;
-
-    margin-top:18px;
+    justify-content:center;
 
     padding:12px 22px;
+    margin-top:18px;
 
     border-radius:999px;
 
     cursor:pointer;
-
-    color:#041018;
 
     font-weight:700;
 
@@ -276,8 +196,14 @@ body::before{
         #4361ee
     );
 
+    color:#041018;
+
     box-shadow:
     0 12px 30px rgba(76,201,255,.4);
+}
+
+.flash-btn:hover{
+    transform:translateY(-2px);
 }
 
 p{
@@ -286,35 +212,30 @@ p{
 }
 
 ul,ol{
+    padding-left:22px;
     margin-top:10px;
-    padding-left:20px;
 }
 
 li{
-    margin-bottom:8px;
-    color:var(--muted);
+    margin-bottom:10px;
     line-height:1.6;
+    color:var(--muted);
 }
 
 .board-grid{
     display:grid;
     grid-template-columns:
-    repeat(
-        auto-fit,
-        minmax(250px,1fr)
-    );
-
+        repeat(
+            auto-fit,
+            minmax(250px,1fr)
+        );
     gap:15px;
 }
 
 .board{
     background:#11192e;
-
-    border:
-    1px solid rgba(76,201,255,.15);
-
+    border:1px solid rgba(76,201,255,.15);
     border-radius:14px;
-
     padding:18px;
 }
 
@@ -322,12 +243,14 @@ li{
     color:white;
 }
 
+.full{
+    margin-top:20px;
+}
+
 .footer-credit{
     text-align:center;
-
     margin-top:35px;
-
-    opacity:.85;
+    opacity:.9;
 }
 
 .footer-credit span{
@@ -335,267 +258,217 @@ li{
     font-weight:700;
 }
 
-.full{
-    margin-top:20px;
-}
-
-@media(max-width:850px){
+@media (max-width:850px){
 
     .grid{
         grid-template-columns:1fr;
     }
 
-    .hero h1{
-        font-size:1.8rem;
-    }
-
-    .hero-content{
-        padding:25px;
+    .hero-actions{
+        justify-content:center;
     }
 }
 
 </style>
 </head>
+
 <body>
 
 <div class="container">
 
-<!-- HERO -->
-
 <header class="hero">
-
-<img
-src="images/webkitty-banner.png"
-alt="PS4 WebKitty V2 Banner">
-
-<div class="hero-overlay">
-
-<div class="hero-content">
-
-<div class="hero-badge">
-ESP32-S3 Portable Offline Jailbreak Host
-</div>
-
-<h1>
-PS4 WebKitty V2 Offline Jailbreak Server
-</h1>
-
-<p>
-An offline PS4 jailbreak host based on ArabPixel/WebKitty,
-ported to the ESP32-S3 platform for a portable and
-self-contained jailbreak solution. Supports a wide range
-of PlayStation 4 firmware versions without requiring an
-internet connection.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#flash" class="btn btn-primary">
-Flash Firmware
-</a>
-
-<a href="#guide" class="btn btn-secondary">
-Setup Guide
-</a>
-
-</div>
-
-</div>
-
-</div>
-
+    <img
+    src="webkitty-banner.png"
+    alt="PS4 WebKitty V2 Banner">
 </header>
 
-<!-- TOP GRID -->
+<div class="hero-actions">
+
+    <a href="#flash" class="btn btn-primary">
+        ⚡ Flash Firmware
+    </a>
+
+    <a href="#guide" class="btn btn-secondary">
+        📖 Setup Guide
+    </a>
+
+    <a
+    href="https://github.com/Vegueta-1/PS4-WebKitty-V2-Offline-Jailbreak-Server-ESP32-S3"
+    target="_blank"
+    class="btn btn-secondary">
+        GitHub Repository
+    </a>
+
+</div>
 
 <div class="grid">
 
-<!-- FLASH -->
-
 <section id="flash" class="card">
 
-<div class="section-title">
-Firmware Installation
-</div>
+    <div class="section-title">
+        Firmware Installation
+    </div>
 
-<div class="warning">
+    <div class="warning">
 
-<strong>⚠ Hardware Specific</strong><br><br>
+        <strong>⚠ Hardware Requirements</strong>
+        <br><br>
 
-This firmware is ONLY for ESP32-S3
-N16R8 WROOM-1 devices
-(16MB Flash / 8MB PSRAM).
+        Primary Support:
+        <br><br>
 
-</div>
+        ✅ ESP32-S3 DevKitC-1 N16R8<br>
+        ✅ Waveshare ESP32-S3 N16R8<br>
+        ✅ WeAct Studio ESP32-S3 N16R8<br>
+        ✅ LilyGO T-Display S3 (16MB Flash / 8MB PSRAM)
 
-<p>
-Connect your compatible ESP32-S3 board via USB
-and flash the latest PS4 WebKitty V2 firmware.
-</p>
+        <br><br>
 
-<esp-web-install-button manifest="./manifest.json">
+        Requires ESP32-S3 hardware with
+        16MB Flash and 8MB PSRAM.
 
-<button slot="activate" class="flash-btn">
-⚡ Flash WebKitty V2 Firmware
-</button>
+    </div>
 
-</esp-web-install-button>
+    <p>
+        Connect your ESP32-S3 board via USB and flash
+        the latest PS4 WebKitty V2 firmware.
+    </p>
 
-<p style="margin-top:14px;">
-Chrome or Microsoft Edge required
-(Web Serial API).
-</p>
+    <esp-web-install-button manifest="./manifest.json">
+
+        <button slot="activate" class="flash-btn">
+            ⚡ Flash WebKitty V2 Firmware
+        </button>
+
+    </esp-web-install-button>
+
+    <p style="margin-top:14px;">
+        Requires Google Chrome or Microsoft Edge
+        with Web Serial support.
+    </p>
 
 </section>
-
-<!-- FEATURES -->
 
 <section class="card">
 
-<div class="section-title">
-Features
-</div>
+    <div class="section-title">
+        Features
+    </div>
 
-<ul>
-<li>Offline PS4 jailbreak server</li>
-<li>Portable self-hosted exploit system</li>
-<li>GoldHEN support included</li>
-<li>No internet connection required</li>
-<li>Fast ESP32-S3 deployment</li>
-<li>Supports PS4 firmware 6.7x through 13.52</li>
-<li>Optimized WebKitty V2 host environment</li>
-</ul>
+    <ul>
+        <li>Offline PS4 jailbreak server</li>
+        <li>Portable self-hosted exploit platform</li>
+        <li>GoldHEN payload support</li>
+        <li>No internet connection required</li>
+        <li>Fast ESP32-S3 deployment</li>
+        <li>PS4 firmware support 6.xx through 13.52</li>
+        <li>Optimized WebKitty V2 host environment</li>
+    </ul>
 
 </section>
 
 </div>
-
-<!-- SUPPORTED BOARDS -->
 
 <section class="card full">
 
-<div class="section-title">
-Supported ESP32-S3 Boards
-</div>
+    <div class="section-title">
+        Supported ESP32-S3 Boards
+    </div>
 
-<div class="board-grid">
+    <div class="board-grid">
 
-<div class="board">
-<strong>✅ LilyGO T-Display S3</strong><br>
-16MB Flash / 8MB PSRAM
-</div>
+        <div class="board">
+            <strong>✅ LilyGO T‑Display S3</strong><br>
+            16MB Flash / 8MB PSRAM
+        </div>
 
-<div class="board">
-<strong>✅ ESP32-S3 DevKitC-1 N16R8</strong>
-</div>
+        <div class="board">
+            <strong>✅ ESP32‑S3 DevKitC‑1 N16R8</strong>
+        </div>
 
-<div class="board">
-<strong>✅ Waveshare ESP32-S3 N16R8</strong>
-</div>
+        <div class="board">
+            <strong>✅ Waveshare ESP32‑S3 N16R8</strong>
+        </div>
 
-<div class="board">
-<strong>✅ WeAct Studio ESP32-S3 N16R8</strong>
-</div>
+        <div class="board">
+            <strong>✅ WeAct Studio ESP32‑S3 N16R8</strong>
+        </div>
 
-</div>
+    </div>
 
 </section>
-
-<!-- GUIDE -->
 
 <section id="guide" class="card full">
 
-<div class="section-title">
-PS4 Setup Guide
-</div>
+    <div class="section-title">
+        PS4 Setup Guide
+    </div>
 
-<ol>
+    <ol>
 
-<li>
-Settings → Network →
-Set Up Internet Connection →
-Use Wi‑Fi → Custom
-</li>
+        <li>
+            Settings → Network →
+            Set Up Internet Connection →
+            Use Wi‑Fi → Custom
+        </li>
 
-<li>
-Connect to:
-<strong>Exploit-PS4</strong>
-</li>
+        <li>
+            Connect to <strong>Exploit‑PS4</strong>
+        </li>
 
-<li>
-Password:
-<strong>password</strong>
-</li>
+        <li>
+            Password: <strong>password</strong>
+        </li>
 
-<li>
-IP Address Settings → Automatic
-</li>
+        <li>IP Address Settings → Automatic</li>
+        <li>DHCP Host Name → Do Not Specify</li>
+        <li>DNS Settings → Automatic</li>
+        <li>MTU Settings → Automatic</li>
+        <li>Proxy Server → Do Not Use</li>
+        <li>Run Test Connection</li>
+        <li>Do NOT open the Internet Browser</li>
 
-<li>
-DHCP Host Name → Do Not Specify
-</li>
+        <li>
+            Open:
+            Settings →
+            User's Guide / Helpful Info →
+            User Guide
+        </li>
 
-<li>
-DNS Settings → Automatic
-</li>
-
-<li>
-MTU Settings → Automatic
-</li>
-
-<li>
-Proxy Server → Do Not Use
-</li>
-
-<li>
-Run Test Connection
-</li>
-
-<li>
-Do NOT open the Internet Browser
-</li>
-
-<li>
-Open:
-Settings →
-User's Guide / Helpful Info →
-User Guide
-</li>
-
-</ol>
+    </ol>
 
 </section>
 
-<!-- ABOUT -->
-
 <section class="card full">
 
-<div class="section-title">
-About This Project
-</div>
+    <div class="section-title">
+        About This Project
+    </div>
 
-<p>
-PS4 WebKitty V2 is an offline exploit host
-based on ArabPixel/WebKitty and ported to ESP32-S3
-hardware to provide a compact,
-portable, self-contained PS4 jailbreak solution.
-</p>
+    <p>
+        An offline PS4 jailbreak host based on
+        ArabPixel/WebKitty, ported to the ESP32‑S3
+        platform for a portable and self‑contained
+        jailbreak solution.
+    </p>
 
-<p style="margin-top:15px;">
-Supports PS4 firmware versions
-6.7x through 13.52 and includes
-GoldHEN support for offline operation.
-</p>
+    <p style="margin-top:15px;">
+        Supports a wide range of PlayStation 4
+        firmware versions without requiring
+        an internet connection.
+    </p>
 
 </section>
 
 <div class="footer-credit">
-Originally based on ArabPixel/WebKitty<br>
-Ported to <span>ESP32-S3 by Vegueta1</span>
+
+    Originally based on ArabPixel/WebKitty
+    <br>
+    Ported to <span>ESP32‑S3 by Vegueta1</span>
+
 </div>
 
 </div>
 
 </body>
 </html>
-
