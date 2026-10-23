@@ -73,5 +73,50 @@ The original creator’s repository at https://github.com/ArabPixel/WebKitty is 
 
 Special thanks to the original creator for their work on this project.
 
+🐱 WEB KITTY BIN MAKER for ESP32-S3
+🛠 For Advanced Users
 
+
+
+Rebuild and generate updated BIN files whenever WebKitty receives new updates, without having to manually run multiple tools and scripts.
+
+
+
+✨ Features
+Pull the latest WebKitty updates directly from GitHub
+Manage and edit payloads
+Build LittleFS images
+Compile firmware with Arduino CLI
+Generate bootloader, application, LittleFS, and full-flash BIN files
+Flash ESP32-S3 devices
+BIN validation tools
+Local PC test server
+Release package builder with SHA-256 verification
+📦 Build Archive Support
+WEB KITTY BIN MAKER is designed to help you keep a copy of every build image you create for future use and testing.
+
+
+
+📶 Wi-Fi Configuration
+You can change the default SSID and password if you do not want to use the preconfigured settings.
+
+
+
+ Target Hardware
+ESP32-S3-WROOM-1 N16R8
+
+
+
+16MB Flash
+8MB PSRAM
+⚠️ Beta Release
+This tool is currently in Beta. Before reporting any issues, please make sure you have read the included guide, as it covers many common questions and setup procedures.
+
+
+
+Download
+Download the tool here: https://mega.nz/file/bxRjRZ7L#PmRkuLV1mFsgMNIeuAq-PvGOMJAY1GcJbwbHnW7kfJw
+
+SHA256SUMS - WebKittyServerESP32S3.exe - 177f851bd6b4efefd23f769f9632923bb6ff49835e042a13226d775d66f23f98
+ Developed by Vegueta1
 
