@@ -104,11 +104,11 @@ You can change the default SSID and password if you do not want to use the preco
 
  Target Hardware
 ESP32-S3-WROOM-1 N16R8
-
-
-
 16MB Flash
 8MB PSRAM
+
+
+
 ⚠️ Beta Release
 This tool is currently in Beta. Before reporting any issues, please make sure you have read the included guide, as it covers many common questions and setup procedures.
 
