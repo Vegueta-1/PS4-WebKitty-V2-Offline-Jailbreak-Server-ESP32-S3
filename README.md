@@ -77,6 +77,9 @@ The original creator’s repository at https://github.com/ArabPixel/WebKitty is 
 Special thanks to the original creator for their work on this project.
 
 🐱 WEB KITTY BIN MAKER for ESP32-S3
+
+<img width="2557" height="1402" alt="Dashboard" src="https://github.com/user-attachments/assets/817eb9af-ad92-4278-a0c7-fce306563af3" />
+
 🛠 For Advanced Users
 
 
