@@ -1,0 +1,16 @@
+{
+  "name": "WebKitty ESP32-S3 MON16R8",
+  "version": "1.0",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "WebKitty Server PS4-6.xx-13.52.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
