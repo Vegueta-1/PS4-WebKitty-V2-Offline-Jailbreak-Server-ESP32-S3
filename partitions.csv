@@ -1,0 +1,18 @@
+# Name,   Type,  SubType,   Offset,   Size,     Flags
+#
+# WebKitty - ESP32-S3-WROOM-1 N16R8 (16 MB flash / 8 MB octal PSRAM)
+# Total flash = 0x1000000 (16 MB). Table below ends exactly at 0x1000000.
+#
+#   0x000000  bootloader          (IDF/Arduino managed)
+#   0x008000  partition table     (IDF/Arduino managed)
+#   0x009000  nvs        20 KB    wifi creds, app settings
+#   0x00e000  otadata     8 KB    OTA boot selector / rollback state
+#   0x010000  app0     2560 KB    firmware (sketch + WiFi + WebServer + decoder)
+#   0x290000  storage  13696 KB   LittleFS  -> packed web assets + payload bins
+#   0xff0000  coredump    64 KB   crash dumps for debugging
+#
+nvs,      data,  nvs,      0x9000,   0x5000,
+otadata,  data,  ota,      0xe000,   0x2000,
+app0,     app,   ota_0,    0x10000,  0x280000,
+spiffs,   data,  spiffs,   0x290000, 0xD60000,
+coredump, data,  coredump, 0xFF0000, 0x10000,
