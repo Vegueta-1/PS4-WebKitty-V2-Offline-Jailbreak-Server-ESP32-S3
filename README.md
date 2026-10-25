@@ -123,12 +123,12 @@ This tool is currently in Beta. Before reporting any issues, please make sure yo
 Download
 
 
-Download the tool here: https://mega.nz/file/bxRjRZ7L#PmRkuLV1mFsgMNIeuAq-PvGOMJAY1GcJbwbHnW7kfJw
+Download the tool here: https://mega.nz/file/SgIygKRY#yy-O7-RrJrXM7nD_DMfyPW3wBRm64E-Sh6-yFR1Novc
 
 SHA-256 Verification
 
 File: WebKittyServerESP32S3.exe
-SHA-256: 177f851bd6b4efefd23f769f9632923bb6ff49835e042a13226d775d66f23f98
+SHA-256: dfac47a2db7a0b170e3b50a86b25a8810e7b96c144815e2588712516e2d113a5
 
 Verify this checksum after downloading to ensure the file has not been modified or corrupted.
 
